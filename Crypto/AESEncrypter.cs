@@ -10,7 +10,7 @@ namespace Crypto
 {
     public class AESEncrypter : IEncrypter
     {
-        private readonly string _keyId = ""; 
+        private readonly string _keyId = "";
         private readonly byte[] _iv = new byte[] { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
         public async Task<IEncryptionPackage> Encrypt(string plainText)
